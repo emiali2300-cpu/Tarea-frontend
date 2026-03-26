@@ -1,0 +1,68 @@
+body {
+  background-image: url(fondo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#p1bu {
+  color: black;
+  text-shadow: 2px 2px 5px #00ff98;
+  text-align: center;
+}
+.pepe{
+  position: relative;
+  text-align: center;
+}
+.bodidi{
+  text-align: center;
+  color: black;
+  text-shadow: 2px 2px 5px #1297de;
+}
+img{
+  width: 100px;
+  height: 100px;
+}
+button{
+  align-self: center;
+  width: 100px;
+  height: 100px;
+
+}
+
+.lin{
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+#camm{
+  border: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  display: block;
+  background-color: aqua;
+  margin: 20px auto;
+}
+#camm:hover{
+  animation: cambioColor 2s infinite;
+}
+
+@keyframes cambioColor {
+  0%   { background-color: green; }
+  25%  { background-color: lime; }
+  50%  { background-color: yellow; }
+  75%  { background-color: orange; }
+  100% { background-color: green; }
+}
+
+#quepo{
+  text-align: center;
+  font-size: medium;
+  text-shadow: 2px 2px 5px #000000;
+}
+#JJK{
+  width: 200px;
+  height: 400px;
+}
+#JJK:hover{
+  
+} 
