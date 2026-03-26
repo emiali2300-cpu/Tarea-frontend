@@ -17,6 +17,7 @@ body {
   text-align: center;
   color: black;
   text-shadow: 2px 2px 5px #1297de;
+  
 }
 img{
   width: 100px;
@@ -27,6 +28,11 @@ button{
   width: 100px;
   height: 100px;
 
+}
+
+.header {
+    background-color: #ffc0fb;
+    color: #000000;
 }
 
 .lin{
@@ -54,11 +60,6 @@ button{
   100% { background-color: green; }
 }
 
-#quepo{
-  text-align: center;
-  font-size: medium;
-  text-shadow: 2px 2px 5px #000000;
-}
 #JJK{
   width: 200px;
   height: 400px;
