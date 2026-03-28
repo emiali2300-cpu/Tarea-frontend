@@ -1,36 +1,75 @@
-<html lang = "es">
+<html lang="es">
+
 <head>
-<link rel="stylesheet" href="index.css">
-<script src="index.js"></script>
-<title>Tarea 1</title>
-<meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Tarea 1</title>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
-<body>
-<div id = "quepo">
-    <h1>Mnaga cafe</h1>
-    <div style="background-color: white;">
-        <p>Aquí puedes disfrutar de una amplia colección de manga de distintos 
-            géneros mientras te relajas en un ambiente acogedor, acompañado de tu bebida favorita.</p>
-</div>
-<div class="pepe"><h2 style="text-align: center;"></h2>
-</div>
 
-<div>
+<body>
+
+    <div class="header-pagina">
+        <h1>
+            Bienvenidos al Manga Café
+        </h1>
+        <p class="lead">Café, manga y un espacio tranquilo para pasarla bien.</p>
+    </div>
+
+
     <div class="lin">
-        <h1 id="h1bu">Informacion de JJK</h1>
+        <h1 id="h1bu">Información de JJK</h1>
     </div>
     <div class="anim">
     </div>
 
     <div class="bodidi">
-        <p id="p1bu">Jujutsu Kaisen es un manga publicado en 2018, creado por Gege Akutami, que pertenece a los géneros de acción, sobrenatural, horror oscuro y shonen. La historia sigue a Yuji Itadori, un estudiante con habilidades físicas extraordinarias que, tras entrar en contacto con un objeto maldito, termina convirtiéndose en el recipiente de Ryomen Sukuna. A partir de ese momento, se ve obligado a integrarse en una escuela de hechicería, donde, bajo la tutela de Satoru Gojo, 
-            enfrentará peligrosas maldiciones mientras lucha por mantener el control de su propio cuerpo y cumplir su misión.</p>
+        <div class="descripcion">
+            <p id="p1bu">Jujutsu Kaisen es un manga publicado en 2018, creado por Gege Akutami, que pertenece a los
+                géneros de acción, sobrenatural, horror oscuro y shonen. La historia sigue a Yuji Itadori, un estudiante
+                con habilidades físicas extraordinarias que, tras entrar en contacto con un objeto maldito, termina
+                convirtiéndose en el recipiente de Ryomen Sukuna. A partir de ese momento, se ve obligado a integrarse
+                en una escuela de hechicería, donde, bajo la tutela de Satoru Gojo,
+                enfrentará peligrosas maldiciones mientras lucha por mantener el control de su propio cuerpo y cumplir
+                su misión.</p>
+        </div>
         <div>
-        <img id="JJK" onmouseover="changeimage()" onmouseleave="original()" src="descarga.png"></img>
+            <img id="JJK" onmouseover="changeimage()" onmouseleave="original()" src="descarga.png"></img>
         </div>
     </div>
-</div>
-<button id = "camm" onclick="evol()">Cambiar de manga</button>
+    </div>
+    <button id="camm" onclick="changetext()">Cambiar de manga</button>
+
+
+    <div class="menu-dia-contenedor">
+        <div class="opciones-menu">
+        <label for="dias">Seleccione un dia</label>
+        <select onchange="updateDia()" id="dias">
+            <option value="-1">--Selecciona una opción</option>
+            <option value="0">Lunes</option>
+            <option value="1">Martes</option>
+            <option value="2">Miércoles</option>
+            <option value="3">Jueves</option>
+            <option value="4">Viernes</option>
+        </select>
+        </div>
+    
+        <div class="menu-dia"> 
+        <p id="seleccion">Menu del Lunes:</p>
+        <ul>
+            <li id="item1">Ensalada César</li>
+            <li id="item2">Sopa de tomate</li>
+            <li id="item3">Pechuga de pollo a la plancha</li>
+            <li id="item4">Fruta fresca</li>
+        </ul>
+        </div>
+        
+    </div>
+
 </body>
+
 </html>

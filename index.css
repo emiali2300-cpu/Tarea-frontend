@@ -6,7 +6,6 @@ body {
 }
 #p1bu {
   color: black;
-  text-shadow: 2px 2px 5px #00ff98;
   text-align: center;
 }
 .pepe{
@@ -17,6 +16,7 @@ body {
   text-align: center;
   color: black;
   text-shadow: 2px 2px 5px #1297de;
+  
 }
 img{
   width: 100px;
@@ -26,6 +26,59 @@ button{
   align-self: center;
   width: 100px;
   height: 100px;
+
+}
+
+
+.descripcion {
+    
+    width: 65%;        
+    padding: 20px;       
+    margin: 15px auto;   
+
+    
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;   
+    border-radius: 8px;        
+
+    
+    font-family: Arial, sans-serif;
+    color: #333;                  
+    line-height: 1.5;              
+    text-align: center;            
+}
+.header-pagina{
+  
+    width: 80%;        
+    padding: 20px;       
+    margin: 15px auto;   
+    
+  background-color: #ffc0fb;
+  color: #000000;
+  text-align: center;
+  border-radius: 8px;   
+}
+
+.menu-dia-contenedor{
+  width: 80%;        
+   
+  padding: 20px;
+  margin: 15px auto;   
+  background-color: #ffc1e4;
+  
+  
+  border-radius: 8px;   
+}
+
+.opciones-menu{
+  text-align: center;
+  
+  color: #000000;
+}
+
+.menu-dia{
+  text-align: left;
+  font-size: 30px;
 
 }
 
@@ -54,11 +107,6 @@ button{
   100% { background-color: green; }
 }
 
-#quepo{
-  text-align: center;
-  font-size: medium;
-  text-shadow: 2px 2px 5px #000000;
-}
 #JJK{
   width: 200px;
   height: 400px;
@@ -66,3 +114,5 @@ button{
 #JJK:hover{
   
 } 
+
+
