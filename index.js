@@ -1,6 +1,13 @@
 let cntr = 1;
 
 
+function triggerFadeIn() {
+    var desc = document.querySelector(".descripcion");
+    desc.classList.remove("fade-in");
+    void desc.offsetWidth; // fuerza reflow para reiniciar la animacion
+    desc.classList.add("fade-in");
+}
+
 function changetext() {
     if (cntr == 0) {
         cntr++;
@@ -34,6 +41,7 @@ function changetext() {
         document.getElementById("h1bu").innerHTML = "Informacion de JJK";
         document.getElementById("p1bu").innerHTML = "Jujutsu Kaisen es un manga publicado en 2018, creado por Gege Akutami, que pertenece a los géneros de acción, sobrenatural, horror oscuro y shonen. La historia sigue a Yuji Itadori, un estudiante con habilidades físicas extraordinarias que, tras entrar en contacto con un objeto maldito, termina convirtiéndose en el recipiente de Ryomen Sukuna. A partir de ese momento, se ve obligado a integrarse en una escuela de hechicería, donde, bajo la tutela de Satoru Gojo, enfrentará peligrosas maldiciones mientras lucha por mantener el control de su propio cuerpo y cumplir su misión.";
     }
+    triggerFadeIn();
 }
 
 function changeimage() {
@@ -63,6 +71,13 @@ function original() {
     document.getElementById("JJK").src = "descarga.png";
 }
 
+
+function triggerSlideIn() {
+    var menu = document.querySelector(".menu-dia");
+    menu.classList.remove("slide-in");
+    void menu.offsetWidth;
+    menu.classList.add("slide-in");
+}
 
 function updateDia() {
     var select = document.getElementById("dias");
@@ -114,5 +129,5 @@ function updateDia() {
 
 
     }
+    triggerSlideIn();
 }
-
