@@ -46,29 +46,29 @@ function changetext() {
 
 function changeimage() {
     if (cntr == 1) {
-        document.getElementById("JJK").src = "portada.jpg";
+        document.getElementById("JJK").src = "../portada.jpg";
 
     }
     else if (cntr == 2) {
-        document.getElementById("JJK").src = "portada2.jpg";
+        document.getElementById("JJK").src = "../portada2.jpg";
 
     }
     else if (cntr == 3) {
-        document.getElementById("JJK").src = "portada3.jpg";
+        document.getElementById("JJK").src = "../portada3.jpg";
 
     }
     else if (cntr == 4) {
-        document.getElementById("JJK").src = "portada4.jpg";
+        document.getElementById("JJK").src = "../portada4.jpg";
 
     }
     else if (cntr == 5) {
-        document.getElementById("JJK").src = "portada5.jpg";
+        document.getElementById("JJK").src = "../portada5.jpg";
 
     }
 }
 
 function original() {
-    document.getElementById("JJK").src = "descarga.png";
+    document.getElementById("JJK").src = "../descarga.png";
 }
 
 
