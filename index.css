@@ -111,9 +111,7 @@ button{
   width: 200px;
   height: 400px;
 }
-#JJK:hover{
-  
-} 
+ 
 
 /* Animacion 1: fadeIn al cambiar de manga */
 @keyframes fadeIn {
